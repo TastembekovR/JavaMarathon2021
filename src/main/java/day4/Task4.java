@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class Task4 {
     public static void main(String[] args) {
+
         int[] arr1 = new int[100];
         Random rand = new Random();
         for (int i = 0; i < arr1.length; i++) {
@@ -27,4 +28,3 @@ public class Task4 {
         System.out.println(indx);
     }
 }
-

@@ -25,16 +25,12 @@ public class Task1 {
             }
             if (arr1[a] % 2 == 0) {
                 counterChetn++;
-            }
-            if (arr1[a] % 2 != 0) {
+            } else {
                 counterNeChetn++;
             }
-
+            sum += arr1[a];
         }
         System.out.println(Arrays.toString(arr1));
-        for (int x : arr1) {
-            sum += x;
-        }
         System.out.println();
         System.out.println("Длина массива: " + arr1.length);
         System.out.println("Количество чисел больше 8:" + counter8);

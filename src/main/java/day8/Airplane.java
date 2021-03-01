@@ -1,4 +1,4 @@
-package day6;
+package day8;
 
 public class Airplane {
     private String producer;
@@ -40,6 +40,10 @@ public class Airplane {
 
     public void info() {
         System.out.println("Изготовитель: " + producer + ", " + "год выпуска: " + year + ", " + "длина: " + length + ", " + "вес: " + weight + ", " + "количество топлива в баке: " + fuel);
+    }
+
+    public String toString() {
+        return "Изготовитель: " + producer + ", " + "год выпуска: " + year + ", " + "длина: " + length + ", " + "вес: " + weight + ", " + "количество топлива в баке: " + fuel;
     }
 
     public void fillUp(int n) {
