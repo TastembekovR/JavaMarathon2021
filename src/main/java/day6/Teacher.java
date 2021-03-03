@@ -24,10 +24,8 @@ public class Teacher {
             case 4:
                 ocenka = "хорошо";
                 break;
-            case 5:
-                ocenka = "отлично";
-                break;
             default:
+                ocenka = "отлично";
                 break;
         }
         System.out.println("Преподаватель " + name + " оценил студента с именем " + x.getName() + " по предмету " + subject + " на оценку " + ocenka);

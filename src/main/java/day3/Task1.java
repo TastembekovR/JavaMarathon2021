@@ -7,7 +7,7 @@ public class Task1 {
 
         Scanner scan = new Scanner(System.in);
         String city;
-        do {
+        while (true) {
             city = scan.next();
             switch (city) {
                 case "Москва":
@@ -39,7 +39,9 @@ public class Task1 {
                     System.out.println("Неизвестная страна");
                     break;
             }
+            if (city.equals("Stop")) {
+                break;
+            }
         }
-        while (!city.equals("Stop"));
     }
 }
