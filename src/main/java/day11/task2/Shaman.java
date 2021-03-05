@@ -10,13 +10,6 @@ public class Shaman extends Hero implements Healer, MagicAttack {
     }
 
     @Override
-    public String toString() {
-        return "Shaman{" +
-                "health=" + health +
-                '}';
-    }
-
-    @Override
     public void healHimself() {
         if (health + 50 > 100) {
             health = 100;
@@ -40,5 +33,12 @@ public class Shaman extends Hero implements Healer, MagicAttack {
         } else {
             hero.health -= mAttack;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Shaman{" +
+                "health=" + health +
+                '}';
     }
 }

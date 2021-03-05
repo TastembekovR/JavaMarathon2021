@@ -26,8 +26,6 @@ public class TestFigures {
         return sum;
     }
 
-    ;
-
     public static double calculateRedArea(Figure[] figures) {
         double sum = 0;
         for (int i = 0; i < figures.length; i++) {
@@ -37,7 +35,4 @@ public class TestFigures {
         }
         return sum;
     }
-
-    ;
-
 }

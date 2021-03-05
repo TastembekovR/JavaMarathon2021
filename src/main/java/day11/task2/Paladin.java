@@ -1,12 +1,6 @@
 package day11.task2;
 
 public class Paladin extends Hero implements Healer {
-    @Override
-    public String toString() {
-        return "Paladin{" +
-                "health=" + health +
-                '}';
-    }
 
     public Paladin() {
         physDef = 0.5;
@@ -29,5 +23,12 @@ public class Paladin extends Hero implements Healer {
         } else {
             hero.health += 10;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Paladin{" +
+                "health=" + health +
+                '}';
     }
 }

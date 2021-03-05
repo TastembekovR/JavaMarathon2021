@@ -2,13 +2,6 @@ package day11.task2;
 
 public class Magician extends Hero implements MagicAttack {
 
-    @Override
-    public String toString() {
-        return "Magician{" +
-                "health=" + health +
-                '}';
-    }
-
     public Magician() {
         physDef = 0;
         magicDef = 0.8;
@@ -23,5 +16,12 @@ public class Magician extends Hero implements MagicAttack {
         } else {
             hero.health -= mAttack;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Magician{" +
+                "health=" + health +
+                '}';
     }
 }
