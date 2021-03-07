@@ -2,6 +2,7 @@ package day11.task1;
 
 public class Warehouse {
     private int countPickedOrders;
+    private int countDeliveredOrders;
 
     public int getCountPickedOrders() {
         return countPickedOrders;
@@ -15,7 +16,6 @@ public class Warehouse {
         countDeliveredOrders++;
     }
 
-    private int countDeliveredOrders;
 
     public String toString() {
         return "Количество собранных заказов " + countPickedOrders + ", Количество доставленных заказов " + countDeliveredOrders;
@@ -23,7 +23,9 @@ public class Warehouse {
 
     public void deliveryUp() {
         countDeliveredOrders++;
-    }public void pickedUp() {
+    }
+
+    public void pickedUp() {
         countPickedOrders++;
     }
 }

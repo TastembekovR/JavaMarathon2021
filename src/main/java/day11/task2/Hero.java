@@ -5,7 +5,6 @@ public abstract class Hero implements PhysAttack {
     double physDef;
     double magicDef;
     double physAtt;
-    double magicAtt;
 
     public Hero() {
         health = 100;
