@@ -5,7 +5,6 @@ import java.util.List;
 public class MusicBand {
     private String name;
     private int year;
-    private List<MusicBand> bands;
     private List<MusicArtist> members;
 
     public MusicBand(String name, int year, List<MusicArtist> members) {
@@ -20,10 +19,6 @@ public class MusicBand {
 
     public static void transferMembers(MusicBand a, MusicBand b) {
         a.members.addAll(b.members);
-    }
-
-    public List<MusicBand> getBands() {
-        return bands;
     }
 
     public String getName() {
@@ -43,7 +38,6 @@ public class MusicBand {
         return "MusicBand{" +
                 "name='" + name + '\'' +
                 ", year=" + year +
-                ", bands=" + bands +
                 ", members=" + members +
                 '}';
     }

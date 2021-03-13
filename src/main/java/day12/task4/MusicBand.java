@@ -20,6 +20,7 @@ public class MusicBand {
 
     public static void transferMembers(MusicBand a, MusicBand b) {
         a.members.addAll(b.members);
+        b.members.clear();
     }
 
     public List<MusicBand> getBands() {
